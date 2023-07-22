@@ -1,7 +1,10 @@
 # ParadiseClipper
 A simple and easily scalable Crypto Clipper (made for educational purposes)
+<br>
+<br>
+Currently supports: Bitcoin (BTC), Etherium (ETH), DogeCoin (DOGE), LiteCoin (LTE), Monero (XMR)
 <hr>
-This is a small project I started (and made in 5 minutes) just because someone on discord reminded me that crypto clippers are a thing.
+A small project I started after someone on Discord reminded me of Crypto Clippers' existence.
 <br>
 Made purely for educational purposes and for fun.
 <br>

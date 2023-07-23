@@ -13,7 +13,7 @@ Made purely for educational purposes and for fun.
 <h2>Features</h2>
 - Auto Start on boot (Registry Injection).<br>
 - Migration to C:\Users\%username%\ (To avoid suspicion and make harder to remove).<br>
-- Lighter than most other Python Crypto Clippers due to.<br>
+- Lighter than most other Python Crypto Clippers.<br>
 - Support for multiple Crypto Currencies.<br>
 <br>
 <hr>

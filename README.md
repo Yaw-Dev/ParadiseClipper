@@ -15,7 +15,7 @@ Made purely for educational purposes and for fun.
 - Migration to C:\Users\%username%\ (To avoid suspicion and make harder to remove).<br>
 - Lighter than most other Python Crypto Clippers due to.<br>
 - Support for multiple Crypto Currencies.<br>
-<br>
+<hr>
 <br>
 Join my discord server for more: https://discord.gg/e5FJzPVYQB
 or checkout the rest of my GitHub page.

@@ -6,6 +6,8 @@ Currently supports: Bitcoin (BTC), Etherium (ETH), Dogecoin (DOGE), Litecoin (LT
 <hr>
 A small project I started after someone on Discord reminded me of Crypto Clippers' existence.
 <br>
+The program uses next to no system resources thanks to a recent update :)
+<br>
 Made purely for educational purposes and for fun.
 <br>
 <br>

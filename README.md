@@ -2,7 +2,7 @@
 A simple and easily scalable Crypto Clipper (made for educational purposes)
 <br>
 <br>
-Currently supports: Bitcoin (BTC), Etherium (ETH), Dogecoin (DOGE), Litecoin (LTE), Monero (XMR), Bitcoin Cash (BCH), Dash (DASH), Tron (trx) | Leave addresses you don't want to use blank!
+Currently supports: Bitcoin (BTC), Etherium (ETH), Dogecoin (DOGE), Litecoin (LTE), Monero (XMR), Bitcoin Cash (BCH), Dash (DASH), Tron (trx), Ripple (XRP), Stellar (XLM) | Leave addresses you don't want to use blank!
 <br>
 - Will now use next to no system resources thanks to a recent update :)
 <hr>

